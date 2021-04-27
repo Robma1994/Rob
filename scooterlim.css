@@ -1,0 +1,118 @@
+/*nel css ho inserito i selettori che mi permetteranno di dire ad html quale parte di codice voglio modificare nello specifico */
+*{
+  margin: 0;
+}
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*HEADER*/
+.conteiner{
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  width: 850px;
+  height: 650px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+header img{
+  margin-top: 70px;
+  margin-left: 335px;
+}
+.titolo{
+  text-align: center;
+  color: #00dd00;
+  margin-top: 0px;
+}
+
+/*NAV- 1-2*/
+
+/*NAV-rettangoloverde-1*/
+div nav{
+  background-color: #00dd00;
+  width: 650px;
+  height: 35px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-sizing: border-box;
+}
+
+/*NAV-bottoni-2*/
+button[class*="button"]{
+  position: relative;
+  left: 165px;
+  top: 5px;
+
+}
+.button-Prenota{
+  width: 65px;
+}
+.button-Annulla{
+  width: 150px;
+}
+.button-Accendi{
+  width: 100px;
+}
+
+
+/* MAIN*/
+/*i div la cui classe contiene la parola "riga" */
+div[class*="riga"]{
+  margin-left: 100px;
+}
+
+/*i div la cui classe termina la parola "uno" */
+div[class$=uno]{
+  margin-left: 107px;
+}
+
+/* gli H1 la cui classe contiene la parola monopattino*/
+h1[class*="monopattino"]{
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/*Span la cui classe contiene la parola simbolo*/
+span[class*="simbolo"]{
+  color: white;
+  margin-right: 0px;
+}
+
+/* I tre stati di Carica*/
+div[class$="orange"]{
+  width: 200px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: orange;
+}
+div[class$="green"]{
+  width: 400px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: green;
+}
+div[class$="red"]{
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+/*i tre blocchi di distanze*/
+div[class$="distanza"]{
+  margin-bottom: 10px;
+}
+
+/*La riga due di ogni blocco di distanza*/
+h2[class^="s"]{
+  color: lightgrey;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 15px;
+}
+h2[class$="via"]{
+  display: inline-block;
+}
